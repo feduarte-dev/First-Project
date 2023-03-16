@@ -6,22 +6,16 @@ function toggleMode() {
     html.classList.add("light")
   }
 */
-  html.classList.toggle("light") /*tem o mesmo efeito do codigo acima  */
+  html.classList.toggle("light") /*different way to write the same code*/
 
-  const img = document.querySelector("#profile img") /*aqui busca a imagem */
+  const img = document.querySelector("#profile img") /*searches the image*/
   if (html.classList.contains("light")) {
     img.setAttribute("src", "./assets/avatar-light.png")
-    img.setAttribute(
-      "alt",
-      "hehehe"
-    ) /*aqui se ele encontrar light ele coloca avatar light*/
+    img.setAttribute("alt", "xxx")
   } else {
     img.setAttribute("src", "./assets/avatar.png")
-    img.setAttribute(
-      "alt",
-      "Aqui pode ficar a descrição da imagem para caso ela apareça como inválida, este texto entra no lugar"
-    )
-
-    /*se ele nao encontrar light ele coloco avatar normal*/
+    img.setAttribute("alt", "yyy")
+    /*the alt was just homework*/
+    /*if it doesnt finds class light, use default avatar image*/
   }
 }
