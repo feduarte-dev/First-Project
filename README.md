@@ -42,7 +42,7 @@ You can preview the project default layout through [this link](https://www.figma
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT.
+This project is licensed under the MIT.
 
 ## To do list
 
