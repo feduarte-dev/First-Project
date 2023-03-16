@@ -49,6 +49,7 @@ Esse projeto está sob a licença MIT.
 - Add links in the lists
 - Update profile photos
 - Switch button to change languages
+- Change README image
 
 ---
 
