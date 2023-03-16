@@ -1,8 +1,11 @@
+/*reset browser*/
 * {
   margin: 0;
-  padding: 0; /*serve para resetar o padrão do navegador*/
+  padding: 0;
   box-sizing: border-box;
 }
+
+/*dark mode or default mode info*/
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
@@ -12,6 +15,8 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moonstars.svg);
 }
+
+/*light mode info*/
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
@@ -21,26 +26,28 @@
   --highlight-color: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(./assets/sun.svg);
 }
+
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 100vh; /*bg wont be white in low resolutions*/
 }
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+  /*info about text only worked when i put "body *"*/
 }
+
 #container {
   width: 100%;
   max-width: 588px;
-  /* height: 712px; nao precisa colocar a altura pois ela vai se adequando ao tamanho do conteúdo*/
-
-  /*margin, divide o espaço do lado da caixa e joga pro outro lado, fazendo ela centralizar*/
-  margin: auto; /*a regra do css nao aplica as margens para cima e para baixo**/
+  /*height: 712px; no need to use because the page will adapt to the height of the content*/
+  margin: auto; /*auto doesnt apply to top and bottom margins*/
+  /*margin divides the free space in the y axys and centers the content*/
   margin-top: 56px;
-  /* margin: 56px auto 0px; outra forma de escrever
-  se for so uma variável ele aplica a todos os lados, se for duas ele aplica primeiro em cima depois nas laterais, se for quatro é em sentido horário.*/
+  /* margin: 56px auto 0px; another way to write, if only one value it will apply for all sides, if two values apply first in top and then in both sides, if four values apply in clockwise*/
   padding: 0 24px;
 }
+
 #profile {
   padding: 24px;
 }
@@ -48,11 +55,11 @@ body * {
 #profile img {
   width: 112px;
   display: block;
-  margin: auto; /*margin so funcionou pq coloquei display block, assim o codigo interpreta q o conteudo vai ocupar todo o bloco e centraliza, o img é naturalmente inline entao ele nao consegue centralizar.*/
+  margin: auto; /*margin only worked because i wrote display block, so the codes understand that the content will fill the whole block and centralizes, "img" is inline by default so it cant centralizes*/
 }
 #profile p {
   font-weight: 500;
-  font-size: 16px; /*nao precisa colocar pq os navegadores ja tem esse tamanho de fonte por padrão*/
+  font-size: 16px; /*default font size in browser, no need to write*/
   line-height: 24px;
   margin-top: 8px;
   text-align: center;
@@ -62,28 +69,26 @@ body * {
   display: table;
   justify-content: center;
   align-items: center;
-  position: relative; /*faz com que qualquer coisa q esteja absoluto nos children, seja relativo as bordas determinadas em cima*/
-  margin: 4px auto; /*auto usado para alinhar os elementos ao meio*/
+  position: relative; /*makes everything that is absolute in the children to behave inside the relatives rule*/
+  margin: 4px auto; /*auto to align elements in the center*/
 }
-
 #switch button {
   width: 32px;
   height: 32px;
   background: white no-repeat center;
-  border-radius: 50%;
+  border-radius: 50%; /*perfect circle*/
   border: none;
   background-image: var(--switch-bg-url);
   position: absolute;
   right: 0;
   z-index: 1;
-  top: 50%; /*pra colocar o botao bem no meio do track*/
+  top: 50%;
   transform: translateY(-50%);
   animation: slide-back 0.4s forwards;
 }
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
 }
-
 #switch span {
   display: block;
   height: 24px;
@@ -94,9 +99,8 @@ body * {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-
 .light #switch button {
-  animation: slide 0.4s forwards; /*pra animacao nao voltar pro inicio*/
+  animation: slide 0.4s forwards; /*so the animation wont reset from beginning*/
 }
 
 ul {
@@ -109,20 +113,19 @@ ul {
 ul li a {
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px; /*arredondar borda*/
+  border-radius: 8px; /*rounds the border*/
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
-  /*  display: block;
-  text-align: center; (mesma coisa)*/
-  align-items: center; /*precisa ter uma altura de box pra alinhar ao meio no eixo y*/
+  /*display: block;
+  text-align: center; (worked too)*/
+  align-items: center; /*need to have a height in the box to align in the middle of y axys*/
   padding: 16px 24px;
-  font-weight: 500; /*acima de 400 é bold*/
-  text-decoration: none;
+  font-weight: 500; /*above 400 is bold*/
+  text-decoration: none; /*takes out the underline*/
   transition: background 0.3s;
 }
-/*pseudo-selector o efeito de passar mouse em cima*/
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
@@ -130,32 +133,32 @@ ul li a:hover {
 
 #media {
   padding: 24px;
-  display: flex; /*é o q habilita o gap*/
+  display: flex; /*allows to apply gap*/
   justify-content: center;
 }
-
 #media a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
-  border-radius: 50%; /*bolinha perfeita*/
+  border-radius: 50%;
   transition: background 0.3s;
 }
 ion-icon {
   width: 24px;
   height: 24px;
 }
-
 #media a:hover {
   background: var(--highlight-color);
 }
+
 footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
 }
-/*regra q muda o background de acordo com o  tamanho*/
+
+/*rule that changes bg if the device width is more than 700px*/
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg.jpg);
@@ -164,7 +167,8 @@ footer {
     --bg-url: url(./assets/bg-light.jpg);
   }
 }
-/*fazendo animacoes**/
+
+/*animations*/
 @keyframes slide {
   from {
     left: 0%;

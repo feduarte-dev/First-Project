@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
+  <!--I used class here to alternate the atmosphere of all viewport -->
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,55 +11,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto</title>
+    <!--Important to use in order to adapt the webpage width-->
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="container">
+      <!-- the box where all content will be displayed-->
       <div id="profile">
-        <img
-          src="./assets/avatar.png"
-          alt="Aqui pode ficar a descrição da imagem para caso ela apareça como inválida, este texto entra no lugar"
-        />
+        <img src="./assets/avatar.png" />
+        <!--alt="..."use this tag to display a message if the image cant be found-->
         <p>@dd_felipe</p>
       </div>
+      <!--Here ends the code for profile-->
 
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
       </div>
+      <!--Here ends the code for switch-->
 
       <ul>
         <li>
-          <a href="#">inscrever-se no nlw</a>
+          <a href="#" target="_blank">xxx</a>
         </li>
         <li>
-          <a href="#">baixar ebook</a>
+          <a href="#" target="_blank">xxx</a>
         </li>
         <li>
-          <a href="https://rocketseat.com.br/explorer" target="_blank"
-            >baixar portfolio</a
-          >
+          <a href="#" target="_blank">xxx</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">xxx</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">xxx</a>
         </li>
       </ul>
+
       <div id="media">
-        <a href="https://rocketseat.com.br/explorer" target="_blank">
+        <a href="https://github.com/feduarte-dev" target="_blank">
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="https://rocketseat.com.br/explorer">
-          <ion-icon name="logo-youtube"></ion-icon
+        <a href="https://wa.me/5553984135250" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon
         ></a>
-        <a href="https://rocketseat.com.br/explorer">
+        <a href="https://www.instagram.com/dd_felipe/" target="_blank">
           <ion-icon name="logo-instagram"></ion-icon
         ></a>
-        <a href="https://rocketseat.com.br/explorer">
+        <a
+          href="https://www.linkedin.com/in/felipe-delgado-duarte-b6379726a/"
+          target="_blank"
+        >
           <ion-icon name="logo-linkedin"></ion-icon
         ></a>
       </div>
+      <!--Here ends the code for media-->
+
       <footer>
-        Feito com ♥ pela <a href="https://rocketseat.com.br">Rocketseat</a>
+        Personal project guided by
+        <a href="https://rocketseat.com.br">Rocketseat</a>
       </footer>
     </div>
+    <!--Here ends the code for container-->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -67,6 +83,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
     <script src="script.js"></script>
   </body>
 </html>
