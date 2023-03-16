@@ -44,6 +44,12 @@ You can preview the project default layout through [this link](https://www.figma
 
 Esse projeto está sob a licença MIT.
 
+## To do list
+
+- Add links in the lists
+- Update profile photos
+- Switch button to change languages
+
 ---
 
 Personal project guided by Rocketseat [Join our community!](https://discord.gg/rocketseat)
