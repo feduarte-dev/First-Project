@@ -104,6 +104,31 @@ body * {
   animation: slide 0.4s forwards; /*so the animation wont reset from beginning*/
 }
 
+#toggle {
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px; /*rounds the border*/
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  /*display: block;
+  text-align: center; (worked too)*/
+  align-items: center; /*need to have a height in the box to align in the middle of y axys*/
+  padding: 16px 24px;
+  font-weight: 500; /*above 400 is bold*/
+  text-decoration: none; /*takes out the underline*/
+  transition: background 0.3s;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#toggle:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -159,7 +184,11 @@ footer {
   font-size: 14px;
 }
 
+footer a {
+  text-decoration: none;
+}
 /*rule that changes bg if the device width is more than 700px*/
+/*
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg.jpg);
@@ -167,7 +196,7 @@ footer {
   .light {
     --bg-url: url(./assets/bg-light.jpg);
   }
-}
+}*/
 
 /*animations*/
 @keyframes slide {
@@ -185,4 +214,17 @@ footer {
   to {
     left: 0%;
   }
+}
+
+#third {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.please {
+  font-weight: 600;
+}
+
+.title {
+  font-size: 100%;
 }
