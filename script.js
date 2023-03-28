@@ -23,9 +23,9 @@ function toggleMode() {
 const targetDiv = document.getElementById("third")
 const btn = document.getElementById("toggle")
 btn.onclick = function () {
-  if (targetDiv.style.display !== "none") {
-    targetDiv.style.display = "none"
-  } else {
+  if (targetDiv.style.display !== "block") {
     targetDiv.style.display = "block"
+  } else {
+    targetDiv.style.display = "none"
   }
 }

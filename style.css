@@ -29,7 +29,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh; /*bg wont be white in low resolutions*/
+  /*height: 100vh; /*bg wont be white in low resolutions*/
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -219,6 +219,7 @@ footer a {
 #third {
   text-align: center;
   line-height: 1.5;
+  display: none;
 }
 
 .please {
