@@ -13,7 +13,7 @@
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.2);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-bg-url: url(./assets/moonstars.svg);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 /*light mode info*/
@@ -24,7 +24,7 @@
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-bg-url: url(./assets/sun.svg);
+  --switch-bg-url: url(./assets/moonstars.svg);
 }
 
 body {
@@ -54,6 +54,7 @@ body * {
 
 #profile img {
   width: 112px;
+
   display: block;
   margin: auto; /*margin only worked because i wrote display block, so the codes understand that the content will fill the whole block and centralizes, "img" is inline by default so it cant centralizes*/
 }
