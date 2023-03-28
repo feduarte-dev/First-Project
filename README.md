@@ -33,7 +33,7 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-I searched for a free web development course on march, 2023. i was afraid it wouldnt workout because its a whole new area that i never touched. Gladly i finished the course in one week and i had a solid material that gave me motivation and faith in changing carrer. So, this linktree was created to use as business card and portfolio which i intend to update with every new skill that this next phase of my life provides.
+I searched for a free web development course on march, 2023. I was afraid it wouldnt workout because its a whole new area that i never touched. Gladly i finished the course in one week and i had a solid material that gave me motivation and faith in changing carrer. So, this linktree was created to use as business card and portfolio which i intend to update with every new skill that this next phase of my life provides.
 
 ## 🔖 Layout
 
